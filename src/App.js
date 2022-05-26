@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
-import Menu from './Menu';
+import List from './List';
 import Categories from './Categories';
-import items from './data';
-const allCategories = ['all', ...new Set(items.map((item) => item.category))];
+import list from './data';
+const allCategories = ['all', ...new Set(list.map((item) => item.category))];
 
 function App() {
-  const [menuItems, setMenuItems] = useState(items);
+  const [listItems, setListItems] = useState(list);
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
     if (category === 'all') {
-      setMenuItems(items);
+      setListItems(list);
       return;
     }
-    const newItems = items.filter((item) => item.category === category);
-    setMenuItems(newItems);
+    const newItems = list.filter((item) => item.category === category);
+    setListItems(newItems);
   };
 
   return (
     <main>
       <section className="menu section">
         <div className="title">
-          <h2>our menu</h2>
+          <h2>Tampa Bay Lightning</h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
-        <Menu items={menuItems} />
+        <List items={listItems} />
       </section>
     </main>
   );
