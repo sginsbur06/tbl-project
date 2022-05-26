@@ -17,11 +17,15 @@ const menu = [
   },
   {
     id: 3,
-    title: 'godzilla milkshake',
-    category: 'shakes',
-    price: 6.99,
+    //number: '12'
+    title: 'Alex Barré-Boulet',
+    category: 'Center',
+    //born: 'May 21, 1997',
+    //birthplace: 'Montmagny, QC, CAN '
+    //shoots: 'Left',
+    price: 13.99,
     img: './images/item-3.jpeg',
-    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+    desc: `No information`,
   },
   {
     id: 4,
