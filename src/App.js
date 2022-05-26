@@ -19,10 +19,10 @@ function App() {
 
   return (
     <main>
-      <section className="menu section">
-        <div className="title">
-          <h2>Tampa Bay Lightning</h2>
-          <div className="underline"></div>
+      <section class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Tampa Bay Lightning</h1>
+          <div className="mx-auto bg-blue-800 w-5 h-1"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <List items={listItems} />
