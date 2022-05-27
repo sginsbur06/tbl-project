@@ -19,9 +19,10 @@ function App() {
 
   return (
     <main>
-      <section class="bg-white dark:bg-gray-900">
+      <section class="bg-gradient-to-br from-[#0000ff] to-[#090974] dark:bg-gray-900">
             <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Tampa Bay Lightning</h1>
+                <h1 class="font-semibold text-center text-white capitalize 
+                    text-6xl shadow-xl">Tampa Bay Lightning</h1>
           <div className="mx-auto bg-blue-800 w-5 h-1"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
