@@ -23,7 +23,7 @@ function App() {
             <div class="container px-6 py-10 mx-auto">
                 <h1 class="font-semibold text-center text-white capitalize 
                     text-6xl shadow-xl">Tampa Bay Lightning</h1>
-          <div className="mx-auto bg-blue-800 w-5 h-1"></div>
+          <div class="mx-auto bg-blue-800 w-5 h-1"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <List items={listItems} />
